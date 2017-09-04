@@ -4,7 +4,9 @@ echo "meta-dream by Hains, Persian Prince and MastaG"
 echo ""
 echo "https://github.com/DMM-PLi"
 echo ""
-echo "test1 branch"
+echo "test1 branch, Compatible rev: 021f9e0905876b273ff47ad9dbb7298c70ba6e0d"
+echo ""
+echo "You must run this script only once!"
 echo ""
 rm -rf meta-dream
 git clone -b test1 https://github.com/DMM-PLi/meta-dream.git
@@ -18,4 +20,3 @@ rm -f meta-dream/recipes-openpli/e2openplugins-extra/enigma2-plugin-extensions-b
 rm -f meta-openpli/recipes-connectivity/autossh/autossh_1.4c.bb
 find meta-openpli/recipes-openpli/enigma2/ -name "enigma2.bb" -type f -exec sed -i '185,188d' {} \;
 find meta-openpli/recipes-openpli/images/ -name "openpli-enigma2-feed.bb" -type f -exec sed -i 's/iperf/iperf3/g' {} \;
-
