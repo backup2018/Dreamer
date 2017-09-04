@@ -4,7 +4,9 @@ echo "meta-dream by Hains, Persian Prince and MastaG"
 echo ""
 echo "https://github.com/DMM-PLi"
 echo ""
-echo "develop branch"
+echo "develop branch, Compatible rev: 699dec578eb550f628b2b317cc97ff226f5298c5"
+echo ""
+echo "You must run this script only once!"
 echo ""
 rm -rf meta-dream
 git clone https://github.com/DMM-PLi/meta-dream.git
