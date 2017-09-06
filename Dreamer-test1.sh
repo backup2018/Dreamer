@@ -18,5 +18,4 @@ cp -f meta-dream/recipes-connectivity/inadyn-mt/inadyn-mt.bb meta-openpli/recipe
 cp -R meta-dream/recipes-openpli/e2openplugins-extra/ meta-openpli/recipes-openpli/
 rm -f meta-dream/recipes-openpli/e2openplugins-extra/enigma2-plugin-extensions-bitrate.bb
 rm -f meta-openpli/recipes-connectivity/autossh/autossh_1.4c.bb
-find meta-openpli/recipes-openpli/enigma2/ -name "enigma2.bb" -type f -exec sed -i '185,188d' {} \;
 find meta-openpli/recipes-openpli/images/ -name "openpli-enigma2-feed.bb" -type f -exec sed -i 's/iperf/iperf3/g' {} \;
