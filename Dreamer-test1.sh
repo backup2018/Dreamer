@@ -4,14 +4,14 @@ echo "meta-dream by Hains, Persian Prince and MastaG"
 echo ""
 echo "https://github.com/DMM-PLi"
 echo ""
-echo "test1 branch, Compatible rev: 612c99033732a95aece2f6ec6c9d2f3f2db853e3"
+echo "test1 branch, Compatible rev: cea6f84ecf48e1a617393321cc60a1338db0482d"
 echo ""
 echo "You must run this script only once!"
 echo ""
 rm -rf meta-dream
 git clone -b test1 https://github.com/DMM-PLi/meta-dream.git
 rm -f meta-openpli/recipes-openpli/enigma2-plugins/enigma2-plugin-extensions-openwebif.bbappend
+rm -f meta-openpli/recipes-connectivity/autossh/autossh_1.4c.bb
 rm -f meta-openpli/recipes-filesystems/smbnetfs/smbnetfs_git.bbappend
 cp -R meta-dream/recipes-daemons/vsftpd/ meta-openpli/recipes-daemons/
 cp -f meta-dream/recipes-connectivity/inadyn-mt/inadyn-mt.bb meta-openpli/recipes-connectivity/inadyn-mt/inadyn-mt.bb
-rm -f meta-openpli/recipes-connectivity/autossh/autossh_1.4c.bb
