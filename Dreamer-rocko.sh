@@ -14,3 +14,4 @@ rm -f meta-openpli/recipes-openpli/enigma2-plugins/enigma2-plugin-extensions-ope
 rm -f meta-openpli/recipes-connectivity/autossh/autossh_1.4c.bb
 rm -f meta-openpli/recipes-filesystems/smbnetfs/smbnetfs_git.bbappend
 cp -f meta-dream/recipes-connectivity/inadyn-mt/inadyn-mt.bb meta-openpli/recipes-connectivity/inadyn-mt/inadyn-mt.bb
+find -name "Makefile" -type f -exec sed -i 's/meta-dreambox/meta-dream/g' {} \;
