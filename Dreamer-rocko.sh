@@ -11,4 +11,3 @@ echo ""
 cd meta-dream
 git pull origin rocko
 cd ..
-rm -f meta-openpli/recipes-filesystems/smbnetfs/smbnetfs_git.bbappend
